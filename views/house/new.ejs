@@ -1,0 +1,75 @@
+
+<% layout('layouts/boilerplate') %>
+
+<body>
+
+  <div class="row mt-2">
+
+    <div class="col-8 and offset-2">
+
+  <h1>New Listing</h1>
+
+  <form method="post" action="/listings" novalidate class="needs-validation" enctype="multipart/form-data">
+
+    <div class="mb-3">
+
+    <label for="title" class="form-label">Title</label>
+
+    <input placeholder="Title" name="listing[title]" class="form-control" required>
+
+    <div class="valid-feedback">Title looks good!</div>
+
+    <div class="invalid-feedback">Please enter a title</div>
+
+  </div>
+  
+  <div class="mb-3">
+
+    <label for="Description" class="form-label">Description</label>
+    
+    <textarea name="listing[description]" placeholder="Description" class="form-control" required></textarea>
+
+<div class="invalid-feedback">Please enter a short description</div>
+
+  </div>
+    
+  <div class="mb-3">
+    <label for="image" class="form-label">Upload Image</label>
+
+    <input type="file" name="listing[image]" class="form-control" required>
+
+  </div>
+
+  <div class="mb-3">
+
+    <label for="location" class="form-label">Location</label>
+
+    <input placeholder="Location" name="listing[location]" class="form-control" required>
+
+    <div class="invalid-feedback">Location should be valid</div>
+  </div>
+
+  <div class="row">
+
+  <div class="mb-3 col-8">
+
+    <label for="country" class="form-label">Country</label>
+    <input placeholder="Country" name="listing[country]" class="form-control" required>
+
+    <div class="invalid-feedback">Country name should be valid</div>
+  </div>
+
+  <div class="mb-3 col-4">
+
+    <label for="Price" class="form-label">Price</label>
+<input name="listing[price]" placeholder="Price" class="form-control" required>
+
+<div class="invalid-feedback">Price should be valid</div>
+</div>
+</div>
+<button class="btn btn-dark mb-4 add-btn">Add</button>
+  </form>
+
+</div>
+</div>
+</body>

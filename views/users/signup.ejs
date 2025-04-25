@@ -1,0 +1,52 @@
+<% layout('layouts/boilerplate') %>
+
+<div class="row mt-2">
+
+
+  <h1 class="text-center text-decoration-underline">Join CasaNova</h1>
+
+  <div class="col-8 and offset-2">
+
+    <form action="/signup", method="post" class="needs-validation" novalidate>
+
+
+      <div class="mt-4">
+
+        <label for="username" class="form-label">Username</label>
+    
+        <input placeholder="username" name="username" class="form-control" id="username" required>
+    
+        <div class="valid-feedback"> looks good!</div>
+    
+        <div class="invalid-feedback">Please enter a valid username</div>
+    
+      </div>
+
+      <div class="mt-4">
+
+        <label for="email" class="form-label">Email</label>
+    
+        <input placeholder="email" name="email" class="form-control" id="email" required>
+    
+        <div class="valid-feedback"> looks good!</div>
+    
+        <div class="invalid-feedback">Please enter a valid email address</div>
+    
+      </div>
+
+
+      <div class="mt-4">
+
+        <label for="password" class="form-label">Password</label>
+    
+        <input  type="password" placeholder="password" name="password" class="form-control" type id="password" required>
+
+      </div>
+
+      <button class="mt-4 btn btn-success">Signup</button>
+
+       </form>
+
+   </div>
+
+</div>
